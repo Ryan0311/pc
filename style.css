@@ -1,0 +1,1851 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html, body {
+    background: #f5f5f5;
+}
+
+.t-top {
+    position: fixed;
+    right: 125px;
+    bottom: 162px;
+    width: 47px;
+    height: 44px;
+    background: url("img/sprite.png") -266px -46px no-repeat;
+    z-index: 10;
+    display: none;
+}
+
+.t-top:hover {
+    background: url("img/sprite.png") -326px -46px no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.special {
+    float: right;
+    margin-right: 32px;
+}
+
+.special:hover {
+    text-decoration: underline;
+}
+
+/*---------------------------开头黑色部分 start--------------------------*/
+.m-box {
+    height: 70px;
+    width: 100%;
+    background-image: url("img/topbar.png");
+    background-position: 0 -80px;
+    background-repeat: repeat-x;
+}
+
+.m-box-z {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.m-box .logo a {
+    width: 157px;
+    height: 33px;
+    float: left;
+    padding: 22px 18px 0 0;
+    background: url("img/topbar.png") 0 15px no-repeat;
+}
+
+.m-nav li a {
+    height: 67px;
+    line-height: 70px;
+    padding: 3px 21px 0 19px;
+    float: left;
+    font-size: 14px;
+    color: #cccccc;
+    position: relative;
+
+}
+
+.m-nav li.m-hot a {
+    width: 72px;
+    padding-right: 40px;
+}
+
+.m-nav .m-sx li {
+    position: relative;
+}
+
+.m-nav .m-ts a {
+    position: relative;
+    background: url("img/topbar.png") 0 -155px no-repeat;
+}
+
+/*.m-nav{*/
+/*position: relative;*/
+/*}*/
+.m-nav .m-ts i {
+    display: block;
+    background: url("img/topbar.png") -226px 0 no-repeat;
+    width: 14px;
+    height: 9px;
+    position: absolute;
+    left: 400px;
+    top: 63px;
+}
+
+.m-nav .m-sx i {
+    display: block;
+    width: 1px;
+    height: 12px;
+    background: url("img/topbar.png") -239px -332px no-repeat;
+    position: absolute;
+    left: 552px;
+    top: 32px;
+}
+
+.m-nav .m-sx1 i {
+    display: block;
+    width: 1px;
+    height: 12px;
+    background: url("img/topbar.png") -239px -332px no-repeat;
+    position: absolute;
+    left: 620px;
+    top: 32px;
+}
+
+.m-nav li .m-hot {
+    position: relative;
+}
+
+.m-nav .m-hot i {
+    display: block;
+    width: 27px;
+    height: 19px;
+    background: url("img/topbar.png") -191px 0 no-repeat;
+    position: absolute;
+    left: 710px;
+    top: 23px;
+}
+
+.m-nav .m-sx a:hover {
+    background: url("img/topbar.png") 0 -470px no-repeat;
+    /*padding: 3px 21px 0 19px;*/
+}
+
+.m-nav .m-sx a:hover .m-nav .m-sx a i {
+
+    width: 70px;
+    height: 2px;
+    background: url("img/topbar.png") right -470px no-repeat;
+}
+
+.m-box-z .m-put .m-iput {
+    float: left;
+    width: 210px;
+    height: 31px;
+    margin-top: 21px;
+    margin-left: 143px;
+    background: url("img/topbar.png") 0 -550px no-repeat;
+}
+
+.m-box-z .m-put .m-iput span {
+    display: block;
+    margin: 4px 0 0 33px;
+}
+
+.m-box-z .m-put .m-iput span input {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    outline: medium;
+    font-size: 12px;
+    color: #9b9b9b;
+}
+
+.m-put {
+    float: left;
+    /*overflow: hidden;*/
+}
+
+.m-put .m-enter {
+    position: relative;
+    float: left;
+    height: 45px;
+    margin: 20px 0 0 15px;
+    padding: 0 18px 0 0;
+    background: url("img/topbar.png") right -365px;
+
+}
+
+.m-put .m-enter:hover {
+    float: left;
+    height: 45px;
+    margin: 20px 0 0 15px;
+    padding: 0 18px 0 0;
+    background: url("img/topbar.png") right -404px;
+
+}
+
+.m-enter a {
+    display: block;
+    width: 28px;
+    margin-top: 11px;
+    color: #787878;
+    font-size: 12px;
+    /*vertical-align: middle;*/
+}
+
+.m-put .m-enter:hover a {
+    color: #999999;
+
+}
+
+.m-put .m-enter a:hover {
+    color: #787878;
+    text-decoration: underline;
+}
+
+/*---------------------登录的盒子hover时候-----------------------*/
+.m-enter .m-sbox {
+    /*overflow: auto;*/
+    color: #cccccc;
+    font-size: 12px;
+    background: #2a2a2a;
+    width: 162px;
+    height: 194px;
+    position: absolute;
+    left: -103px;
+    top: 38px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    z-index: 3;
+    display: none;
+}
+
+.m-enter .m-sbox .m-sboxs {
+    display: block;
+    width: 14px;
+    height: 9px;
+    background: url("img/topbar.png") -190px -24px no-repeat;
+    position: absolute;
+    left: 107px;
+    top: -8px;
+
+}
+
+.m-enter .m-sbox ul li i {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+}
+
+.m-enter .m-sbox ul li:hover {
+    background: #353535;
+}
+
+.m-enter .m-sbox ul li:nth-child(1) i:nth-child(1) {
+    margin-bottom: -6px;
+    margin-right: 10px;
+    background: url("img/toplist.png") 0 0 no-repeat;
+}
+
+.m-enter .m-sbox ul li:nth-child(2) i:nth-child(1) {
+    margin-bottom: -6px;
+    margin-right: 10px;
+    background: url("img/toplist.png") -20px -22px no-repeat;
+}
+
+.m-enter .m-sbox ul li:nth-child(3) i:nth-child(1) {
+    margin-bottom: -6px;
+    margin-right: 10px;
+    background: url("img/toplist.png") -20px -41px no-repeat;
+}
+
+.m-enter .m-sbox ul li:nth-child(4) i:nth-child(1) {
+    margin-bottom: -6px;
+    margin-right: 10px;
+    background: url("img/toplist.png") 0 -21px no-repeat;
+}
+
+.m-enter .m-sbox ul li:nth-child(5) i:nth-child(1) {
+    margin-bottom: -6px;
+    margin-right: 10px;
+    background: url("img/toplist.png") 0 -41px no-repeat;
+}
+
+.m-enter .m-sbox ul {
+    border-radius: 4px;
+    height: 192px;
+    border: 1px solid #404040;
+}
+
+.m-enter .m-sbox ul li {
+    cursor: pointer;
+    padding-left: 17px;
+    height: 38px;
+    line-height: 38px;
+}
+
+/*.m-enter .m-sbox ul li:hover{*/
+/*background: ;*/
+/*}*/
+.m-put .m-enter a:hover .m-enter .m-sbox {
+    display: block;
+}
+
+/*------------------------开头黑色部分 end----------------------------*/
+/*---------------------导航栏红色部分start--------------------------*/
+.m-red {
+    width: 100%;
+    height: 35px;
+    background: url("img/topbar.png") 0 -230px;
+    font-style: normal;
+}
+
+.m-redz {
+    width: 690px;
+    margin: 0 auto;
+}
+
+.m-red ul li a {
+    padding-left: 14px;
+    display: block;
+    height: 35px;
+    text-decoration: none;
+    color: #ffffff;
+    /*background: url("img/topbar.png") left -268px;*/
+    position: relative;
+    z-index: 1;
+}
+
+.m-red ul {
+    margin-left: 13px;
+}
+
+.m-red ul li {
+    /*padding: 4px 13px ;*/
+    margin-left: 35px;
+    float: left;
+    font-size: 12px;
+}
+
+.m-red ul li em {
+    padding-top: 1px;
+    padding-right: 14px;
+    /*background: url("img/topbar.png")right -268px;*/
+    /*list-style: none;*/
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    height: 35px;
+    line-height: 35px;
+}
+
+.m-red ul .m-redf a {
+    background: url("img/topbar.png") left -268px;
+}
+
+.m-red ul .m-redf em {
+    background: url("img/topbar.png") right -268px;
+}
+
+.m-red ul .m-redx:hover a {
+    background: url("img/topbar.png") left -268px;
+}
+
+.m-red ul .m-redx:hover em {
+    background: url("img/topbar.png") right -268px;
+}
+
+/*-----------------------------红色部分end-------------------------------*/
+/*----------------------------轮播图-start---------------------------*/
+.box {
+    width: 100%;
+    height: 336px;
+    position: relative;
+    background: salmon;
+}
+
+.box .boxInner {
+    width: 730px;
+    height: 336px;
+    margin-left: 186px;
+    position: relative;
+}
+
+.box .boxInner div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+/ / opacity: 1;
+/ / filter: alpha(opacity = 1);
+/ /
+}
+
+.box ul {
+    width: 201px;
+    height: 10px;
+    text-align: center;
+    position: absolute;
+    left: 448.5px;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.box ul li {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #dee5ea;
+    float: left;
+    margin-left: 17px;
+}
+
+.box ul li:hover {
+    cursor: pointer;
+    background: #b90b0b;
+}
+
+.box ul li.on {
+    background: #b90b0b;
+}
+
+.box a {
+    display: block;
+    width: 37px;
+    height: 63px;
+    position: absolute;
+    top: 137px;
+    z-index: 10;
+
+}
+
+.box a.btnleft:hover {
+    background: url("img/banner.png") 0 -430px no-repeat;
+    /*background: #fff;*/
+    /*opacity: 0.3;*/
+    /*filter: alpha(opacity=30);*/
+}
+
+.box a.btnright:hover {
+    background: url("img/banner.png") 0 -578px no-repeat;
+}
+
+.box a.btnleft {
+    background: url("img/arrl.png") no-repeat;
+    left: 124px;
+}
+
+.box a.btnright {
+    background: url("img/arrr.png") no-repeat;
+    right: 124px;
+
+}
+
+.box .custom {
+    width: 254px;
+    height: 336px;
+    background: url("img/3.png") 0 0 no-repeat;
+    position: absolute;
+    top: 0;
+    left: 916px;
+}
+
+.box .custom p {
+    width: 254px;
+    color: #8d8d8d;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 278px;
+}
+
+.box .custom i {
+    display: block;
+    width: 215px;
+    height: 56px;
+    position: absolute;
+    top: 212px;
+    left: 19px;
+}
+
+.box .custom i:hover {
+    cursor: pointer;
+    background: url("img/3.png") 0 -340px no-repeat;
+
+}
+
+/*----------------------------轮播图-end---------------------------*/
+
+/*------------------------正文左侧最长大盒子1503 start-----------------*/
+/*-------------------------热门音乐start---------------------*/
+/*---------------热门音乐最上盒子start*/
+.lengest {
+    float: left;
+    width: 689px;
+    height: 1443px;
+    padding: 20px 20px 40px;
+    border: 1px solid #d3d3d3;
+    border-bottom: none;
+    border-top: none;
+    margin-left: 186px;
+    background: #fff;
+}
+
+.l-hot .l-hot1 {
+    background: url("img/index.png") -226px -156px no-repeat;
+    width: 650px;
+    height: 35px;
+    border-bottom: solid #c10d0c 2px;
+    padding: 0 10px 0 34px;
+}
+
+.l-hot .l-hot1 h2 {
+    width: 82px;
+    height: 28px;
+    float: left;
+    color: #333333;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: normal;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+
+}
+
+.l-hot .l-hot1 ul {
+    width: 236px;
+    height: 14px;
+    float: left;
+    margin: 8px 0 0 20px;
+}
+
+.l-hot .l-hot1 ul li {
+    font-size: 12px;
+    color: #666666;
+    width: 24px;
+    height: 14px;
+    float: left;
+}
+
+.l-hot .l-hot1 ul span {
+    display: block;
+    width: 1px;
+    height: 14px;
+    float: left;
+    background: rgb(204, 204, 204);
+    margin: 0 10px;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+
+.l-hot .l-hot1 i {
+    display: block;
+    width: 12px;
+    height: 12px;
+    float: right;
+    background: url("img/index.png") 0 -239px no-repeat;
+}
+
+.l-hot .l-hot1 .l-more {
+    margin-top: 12px;
+    float: right;
+    width: 40px;
+    height: 14px;
+    font-size: 12px;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.l-hot .l-hot1 li:hover, .l-hot .l-hot1 .l-more:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*---------------热门音乐最上盒子end----*/
+/*--------热门音乐正文盒子ul--start----*/
+.l-hot {
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+.l-hot .l-hotul {
+    width: 689px;
+    height: 468px;
+    margin-top: 20px;
+
+}
+
+.l-hot .l-hotul li {
+    padding-left: 42px;
+    padding-bottom: 30px;
+    float: left;
+    width: 140px;
+    height: 204px;
+}
+
+.l-hot .l-hotul li:nth-child(1) {
+    padding-left: 0;
+}
+
+.l-hot .l-hotul li:nth-child(5) {
+    padding-left: 0;
+}
+
+.l-hot .l-hotul li .l-pic {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.l-hot .l-hotul li img {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.l-hot .l-hotul li img:hover {
+    cursor: pointer;
+}
+
+.l-hot .l-hotul li .l-pics {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 140px;
+    height: 27px;
+    background: url("img/coverall.png") 0 -537px no-repeat;
+}
+
+.l-hot .l-hotul li .l-pics span {
+    color: #ccc;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.l-hot .l-hotul li .l-pics i.l-stop {
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("img/iconall.png") 0 0 no-repeat;
+}
+
+.l-hot .l-hotul li .l-pics i.l-stop:hover {
+    cursor: pointer;
+    background: url("img/iconall.png") 0 -60px no-repeat;
+}
+
+.l-hot .l-hotul li .l-pics i.l-lis {
+    margin-left: 10px;
+    margin-top: 8px;
+    display: inline-block;
+    width: 14px;
+    height: 11px;
+    background: url("img/iconall.png") 0 -23px no-repeat;
+}
+
+.l-hot .l-hotul li p {
+    width: 140px;
+    height: 38px;
+    font-size: 14px;
+    color: #000;
+    margin: 8px 0 3px;
+}
+
+.l-hot .l-hotul li:nth-child(5) p i:nth-child(1) {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    width: 35px;
+    height: 15px;
+    background: url("img/icon.png") -31px -658px no-repeat;
+}
+
+.l-hot .l-hotul li:nth-child(8) p i:nth-child(1) {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    width: 35px;
+    height: 15px;
+    background: url("img/icon.png") -31px -658px no-repeat;
+}
+
+.l-hot .l-hotul li p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.l-hot .l-add {
+    width: 689px;
+    height: 75px;
+}
+
+.l-hot a {
+    position: relative;
+    width: 689px;
+    height: 75px;
+}
+
+.l-hot a i {
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    display: block;
+    width: 24px;
+    height: 18px;
+    background: url("img/short.png");
+}
+
+/*--------热门音乐正文盒子ul--end----*/
+/*-------------------------热门音乐end---------------------*/
+/*--------------新碟上架start---------------*/
+.n-cd {
+    overflow: hidden;
+    width: 689px;
+    /*height: 243px;*/
+}
+
+.n-cd .n-more {
+    background: url("img/index.png") -226px -156px no-repeat;
+    width: 650px;
+    height: 35px;
+    border-bottom: solid #c10d0c 2px;
+    padding: 0 10px 0 34px;
+}
+
+.n-cd .n-more h2 {
+    width: 82px;
+    height: 28px;
+    float: left;
+    color: #333333;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: normal;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+
+.n-cd .n-more .n-hmore {
+    margin-top: 12px;
+    float: right;
+    width: 40px;
+    height: 14px;
+    font-size: 12px;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.n-cd .n-more .n-hmore i {
+    display: block;
+    width: 12px;
+    height: 12px;
+    float: right;
+    background: url("img/index.png") 0 -239px no-repeat;
+}
+
+.n-cd .n-more .n-hmore:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.n-cd .n-sing {
+    position: relative;
+    zoom: 1;
+    height: 186px;
+    margin: 20px 0 37px;
+    border: 1px solid #d3d3d3;
+}
+
+.n-cd .n-sing .n-sings {
+    padding-left: 15px;
+    height: 184px;
+    border: 1px solid #fff;
+    background: #f5f5f5;
+}
+
+.n-cd .n-sing .n-sings ul {
+    /*text-align: center;*/
+    width: 645px;
+    margin-top: 28px;
+}
+
+.n-cd .n-sing .n-sings ul li {
+    margin-left: 11px;
+    float: left;
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.n-cd .n-sing .n-sings ul li div {
+    position: relative;
+    width: 118px;
+    height: 100px;
+}
+
+.n-cd .n-sing .n-sings ul li div img {
+    width: 100px;
+    height: 100px;
+}
+
+.n-cd .n-sing .n-sings ul li div .n-picb {
+    display: inline-block;
+    width: 118px;
+    height: 110px;
+    position: absolute;
+    left: 0;
+    z-index: 5;
+    background: url("img/coverall.png") 0 -570px no-repeat;
+}
+
+.n-cd .n-sing .n-sings ul li div .n-picb:hover {
+    cursor: pointer;
+}
+
+.n-cd .n-sing .n-sings ul li div .n-begin {
+    width: 22px;
+    height: 22px;
+    background: url("img/icn_ply.png") no-repeat;
+    position: absolute;
+    left: 73px;
+    bottom: 4px;
+    z-index: 6;
+    display: none;
+}
+
+.n-cd .n-sing .n-sings ul li div .n-begin:hover {
+    background: url("img/iconall.png") 0 -110px no-repeat;
+}
+
+.n-cd .n-sing .n-sings ul li div p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    width: 106.19px;
+    height: 18px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.n-cd .n-sing .n-sings ul li div .n-p1 {
+    /*margin-top: ;*/
+    color: #000;
+}
+
+.n-cd .n-sing .n-sings ul li div .n-p2 {
+    color: #666;
+}
+
+.n-cd .n-sing .n-sings ul li div p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*--------------新碟上架end---------------*/
+/*-----------榜单start----------*/
+.x-list {
+    /*overflow: hidden;*/
+    width: 689px;
+    /*height: 243px;*/
+}
+
+.x-list .x-lists {
+    background: url("img/index.png") -226px -156px no-repeat;
+    width: 650px;
+    height: 35px;
+    border-bottom: solid #c10d0c 2px;
+    padding: 0 10px 0 34px;
+}
+
+.x-list .x-lists h2 {
+    width: 82px;
+    height: 28px;
+    float: left;
+    color: #333333;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: normal;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+
+.x-list .x-lists .x-more {
+    margin-top: 12px;
+    float: right;
+    width: 40px;
+    height: 14px;
+    font-size: 12px;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.x-list .x-lists .x-more i {
+    display: block;
+    width: 12px;
+    height: 12px;
+    float: right;
+    background: url("img/index.png") 0 -239px no-repeat;
+}
+
+.x-list .x-lists .x-more:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.x-yun {
+    height: 472px;
+    margin-top: 20px;
+    padding-left: 1px;
+    background: url("img/index_bill.png") no-repeat;
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.x-yun dl {
+    float: left;
+    width: 230px;
+    height: 472px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.x-yun .x-right {
+    width: 228px;
+    float: right;
+    /*margin-top: 10px;*/
+}
+
+.x-yun dl dt {
+    width: 230px;
+    height: 100px;
+    padding: 20px 0 0 19px;
+}
+
+.x-yun dl dt .x-pic {
+    position: relative;
+    float: left;
+}
+
+.x-yun dl dt .x-bs {
+    margin: 6px 0 0 10px;
+    float: left;
+}
+
+.x-yun dl dt img {
+    width: 80px;
+    height: 80px;
+}
+
+.x-yun dl dt a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: url("img/coverall.png") -145px -57px no-repeat;
+}
+
+.x-yun dl dt .x-bs .x-i1 {
+    margin-top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url("img/index.png") -267px -205px no-repeat;
+}
+
+.x-yun dl dt .x-bs .x-i2 {
+    margin-top: 10px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url("img/index.png") -300px -205px no-repeat;
+}
+
+.x-yun dl dt .x-bs .x-i1:hover {
+    background: url("img/index.png") -267px -235px no-repeat;
+}
+
+.x-yun dl dt .x-bs .x-i2:hover {
+    background: url("img/index.png") -300px -235px no-repeat;
+}
+
+.x-yun h3:hover {
+    text-decoration: underline;
+}
+
+.x-yun dt:hover, .x-yun h3:hover, .x-yun i:hover {
+    cursor: pointer;
+}
+
+.x-yun dl dd ol {
+    vertical-align: middle;
+    list-style: none;
+    height: 319px;
+    margin-left: 50px;
+    line-height: 32px;
+}
+
+.x-yun dl dd ol li div {
+    display: none;
+    width: 82px;
+    float: right;
+    margin-top: -25px;
+}
+
+.x-yun dl dd ol li span {
+    float: left;
+    position: relative;
+    width: 35px;
+    height: 32px;
+    margin-left: -35px;
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+}
+
+.x-yun dl dd ol li .x-a1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+    width: 170px;
+    height: 32px;
+    float: left;
+}
+
+.x-yun dl dd ol li div a {
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin-right: 10px;
+}
+
+.x-yun dl dd ol li div a:nth-child(1) {
+    background: url("img/index.png") -267px -268px no-repeat;
+}
+
+.x-yun dl dd ol li div a:nth-child(2) {
+    margin: 2px 6px 0 0;
+    background: url("img/icon.png") 0px -700px no-repeat;
+}
+
+.x-yun dl dd ol li div a:nth-child(3) {
+    background: url("img/index.png") -297px -268px no-repeat;
+}
+
+.x-yun dl dd ol li:hover div {
+    display: block;
+}
+
+.x-yun dl dd ol li div a:nth-child(1):hover {
+    background: url("img/index.png") -267px -288px no-repeat;
+}
+
+.x-yun dl dd ol li div a:nth-child(2):hover {
+    background: url("img/icon.png") -22px -700px no-repeat;
+}
+
+.x-yun dl dd ol li div a:nth-child(3):hover {
+    background: url("img/index.png") -297px -288px no-repeat;
+}
+
+.x-yun dl dd ol li .x-a1:hover {
+    text-decoration: underline;
+}
+
+.x-yun dl dd ol li:nth-child(1) span {
+    color: #c10d0c;
+}
+
+.x-yun dl dd ol li:nth-child(2) span {
+    color: #c10d0c;
+}
+
+.x-yun dl dd ol li:nth-child(3) span {
+    color: #c10d0c;
+}
+
+/*-----------榜单end----------*/
+/*------------------------正文左侧最长大盒子1503 end-----------------*/
+/*--------------右边用户登录start----------*/
+.c-enter {
+    position: relative;
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    width: 250px;
+    height: 126px;
+    background: url("img/index.png") 0 0 no-repeat;
+}
+
+.c-enter p {
+    width: 205px;
+    height: 76px;
+    color: #666;
+    margin: 0 auto;
+    padding: 16px 0;
+    line-height: 22px;
+}
+
+.c-enter a {
+    display: block;
+    width: 100px;
+    height: 31px;
+    color: #fff;
+    background: url("img/index.png") 0px -195px no-repeat;
+    position: absolute;
+    left: 70px;
+    top: 78px;
+    text-align: center;
+    line-height: 31px;
+}
+
+.c-enter a:hover {
+    background: url("img/index.png") -110px -195px no-repeat;
+}
+
+.s-singer {
+    border-right: 1px solid #ccc;
+    width: 249px;
+    height: 500px;
+    float: left;
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFFFFF;
+}
+
+.s-singer h3 {
+    width: 210px;
+    height: 23px;
+    border-bottom: 1px solid #ccc;
+    margin: 15px 20px 0 20px;
+    font-size: 12px;
+}
+
+.s-singer h3 span {
+    display: block;
+    float: left;
+}
+
+.s-singer h3 a {
+    color: #666;
+    display: block;
+    float: right;
+    font-weight: normal;
+}
+
+.s-singer h3 a:hover {
+    text-decoration: underline;
+}
+
+.s-singer ul {
+    width: 230px;
+    height: 380px;
+    margin: 6px 0 0 20px;
+}
+
+.s-singer ul li {
+    /*overflow: hidden;*/
+    width: 210px;
+    height: 62px;
+    background: #fafafa;
+    margin-top: 14px;
+}
+
+.s-singer ul li a {
+    color: #333333;
+    float: left;
+    width: 210px;
+    height: 62px;
+    background: #fafafa;
+}
+
+.s-singer ul li a:hover {
+    cursor: pointer;
+    background: #f4f4f4;
+}
+
+.s-singer ul li .s-pic, .s-pic img {
+    float: left;
+    width: 62px;
+    height: 62px;
+}
+
+.s-singer ul li .s-sss {
+    width: 133px;
+    height: 60px;
+    float: left;
+    padding-left: 14px;
+    border: 1px solid #e9e9e9;
+    border-left: none;
+}
+
+.s-singer ul li .s-sss h4 {
+    width: 133px;
+    height: 19px;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.s-singer ul li .s-sss p {
+    width: 90%;
+    color: #666;
+    margin-top: 8px;
+}
+
+.s-apply {
+    width: 250px;
+    height: 31px;
+    /*margin-top: 14px;*/
+}
+
+.s-apply a {
+    margin-left: 20px;
+    border-radius: 4px;
+    color: #333;
+    display: block;
+    width: 210px;
+    height: 31px;
+    line-height: 31px;
+    background: #f7f7f7;
+    border: 1px solid #c3c3c3;
+    text-align: center;
+}
+
+.s-apply a:hover {
+    background: #fefefe;
+}
+
+.s-apply i {
+    font-style: normal;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+.s-hot {
+    margin-top: -27px;
+    border-right: 1px solid #ccc;
+    /*border-bottom:1px solid #ccc ;*/
+    width: 249px;
+    height: 904px;
+    float: left;
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFFFFF;
+}
+
+.s-hot h3 {
+    width: 210px;
+    height: 23px;
+    border-bottom: 1px solid #ccc;
+    margin: 27px 20px 0 20px;
+    font-size: 12px;
+}
+
+.s-hot h3 span {
+    display: block;
+    float: left;
+}
+
+.s-hot ul {
+    width: 230px;
+    margin: 20px 0 0 20px;
+}
+
+.s-hot ul li {
+    float: left;
+    width: 210px;
+    height: 50px;
+}
+
+.s-hot ul li .s-hpic {
+    float: left;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.s-hot ul li .s-hpic img {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 1px #333333 inset
+}
+
+.s-hot ul li .s-zishen {
+    float: left;
+    width: 160px;
+    line-height: 21px;
+}
+
+.s-hot ul li .s-zishen span {
+    color: #000;
+}
+
+.s-hot ul li .s-zishen i {
+    display: inline-block;
+    width: 11px;
+    height: 13px;
+    font-size: 100%;
+    font-style: normal;
+    background: url("img/icon.png") 0 1px no-repeat;
+    vertical-align: middle;
+    margin-left: 3px;
+
+}
+
+.s-hot ul li .s-zishen .s-dj {
+    color: #666;
+}
+
+.footer {
+    width: 1349px;
+    height: 125px;
+    position: relative;
+    border-top: 1px solid #d5d5d5;
+    background: #f9f9f9;
+    overflow: hidden;
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerh {
+    width: 980px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.footer .f-logo1 {
+    float: left;
+    width: 247px;
+    height: 46px;
+    margin: 29px 0 0 0;
+    padding-left: 53px;
+    background: url("img/sprite.png") -400px -80px no-repeat;
+    line-height: 22px;
+    color: #333;
+
+}
+
+.footer .f-logo1 span:nth-child(1) {
+    color: #666;
+    line-height: 22px;
+}
+
+.footer .f-logo1 span.f-join {
+    display: block;
+    color: #999;
+}
+
+.footer .f-logo2 {
+    width: 247px;
+    height: 46px;
+    float: left;
+    margin: 29px 0 0 0;
+    padding-left: 53px;
+    background: url("img/sprite.png") -400px -125px no-repeat;
+}
+
+.footer .f-logo2 span:nth-child(1) {
+    line-height: 22px;
+    color: #666;
+    font-size: 12px;
+}
+
+.footer .f-logo2 span:nth-child(2) {
+    display: block;
+    color: #999;
+    line-height: 22px;
+}
+
+.footer p {
+    color: #9b9b9b;
+    line-height: 22px;
+}
+
+.footer .f-logo3-1 span {
+    color: #666;
+
+}
+
+.footer .f-logo3-2 i {
+    vertical-align: middle;
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    margin-right: 3px;
+    background: url("img/icon.png") 0 -39px no-repeat;
+}
+
+.footer .f-logo3-2 span {
+    color: #666;
+}
+
+.footer .f-logo3 {
+    margin-left: -20px;
+    float: right;
+    width: auto;
+    padding-top: 29px;
+    line-height: 22px;
+}
+
+.f-logo3-1 span:hover, .f-logo3-2 span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*--------------右边用户登录end----------*/
+/*------------底部hover的盒子start----------*/
+
+.g-btmbar:hover .m-playbar {
+    top: -53px;
+}
+
+.g-btmbar {
+    position: fixed;
+    zoom: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    z-index: 1002;
+
+}
+
+.m-playbar {
+    position: absolute;
+    zoom: 1;
+    top: -7px;
+    left: 0;
+    width: 100%;
+    height: 53px;
+    margin: 0 auto;
+    transition: top 0.1s linear;
+
+}
+
+.updn {
+    position: relative;
+    z-index: 11;
+}
+
+.left {
+    float: left;
+    position: absolute;
+    top: -14px;
+    right: 15px;
+    width: 52px;
+    height: 67px;
+    background: url("img/playbar.png") 0 -380px no-repeat;
+}
+
+.left .btn {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 6px 0 0 17px;
+    color: #333;
+    background: url("img/playbar.png") no-repeat -100px -380px;
+}
+
+.right {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    width: 15px;
+    height: 54px;
+    background: url("img/playbar.png") -52px -393px no-repeat;
+    pointer-events: none;
+}
+
+.bg {
+    height: 53px;
+    zoom: 1;
+    margin-right: 67px;
+    background: url("img/playbar.png") 0 0 repeat-x;
+}
+
+.hand {
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.wrap {
+    position: absolute;
+    left: 50%;
+    top: 6px;
+    z-index: 15;
+    width: 980px;
+    height: 47px;
+    margin: 0 auto;
+    margin-left: -490px;
+}
+
+.wrap .btns {
+    width: 157px;
+    padding: 6px 0 0 6px;
+    float: left;
+}
+
+.wrap .btns a {
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    margin-top: 5px;
+    color: #333;
+
+}
+
+.wrap .btns .prv {
+    background: url("img/playbar.png") no-repeat 0 -130px;
+}
+
+.wrap .btns .prv:hover {
+    background: url("img/playbar.png") no-repeat -30px -130px;
+
+}
+
+.wrap .btns .ply {
+    width: 36px;
+    height: 36px;
+    margin-top: 0;
+    background: url("img/playbar.png") 0 -204px no-repeat;
+}
+
+.wrap .btns .ply:hover {
+    background: url("img/playbar.png") -40px -204px no-repeat;
+}
+
+.wrap .btns .nxt {
+    background: url("img/playbar.png") -80px -130px no-repeat;
+}
+
+.wrap .btns .nxt:hover {
+    background: url("img/playbar.png") -110px -130px no-repeat;
+
+}
+
+.head {
+    position: relative;
+    margin: 6px 15px 0 0;
+    width: 34px;
+    height: 34px;
+    float: left;
+}
+
+.head img {
+    width: 34px;
+    height: 34px;
+}
+
+.head .mask {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 34px;
+    height: 35px;
+    background: url("img/playbar.png") 0 -80px no-repeat;
+    color: #333;
+}
+
+.play {
+    position: relative;
+    width: 570px;
+    float: left;
+}
+
+.play .words {
+    height: 28px;
+    overflow: hidden;
+    color: #e8e8e8;
+    text-shadow: 0 1px 0 #171717;
+    line-height: 28px;
+    font-size: 12px;
+}
+
+.play .words .name {
+    max-width: 300px;
+    color: #e8e8e8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+}
+
+.play .words .name:hover {
+    text-decoration: underline;
+}
+
+.play .words .mv {
+    width: 19px;
+    height: 17px;
+    margin: 6px 0 0 3px;
+    background: url("img/playbar.png") 0 -57px no-repeat;
+    float: left;
+}
+
+.play .words .mv:hover {
+    background: url("img/playbar.png") -20px -57px no-repeat;
+
+}
+
+.words .by {
+    max-width: 220px;
+    margin-left: 15px;
+    color: #9b9b9b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+}
+
+.words .by a {
+    color: #9b9b9b
+}
+
+.words .by a:hover {
+    text-decoration: underline;
+}
+
+.src {
+    float: left;
+    width: 14px;
+    height: 15px;
+    margin: 7px 0 0 13px;
+    background: url("img/playbar.png") -110px -103px no-repeat;
+}
+
+.src:hover {
+    background: url("img/playbar.png") -130px -103px no-repeat;
+
+}
+
+.m-pbar {
+    width: 455px;
+    position: relative;
+    font-size: 12px;
+
+}
+
+.m-pbar .barbg {
+    width: 455px;
+    height: 9px;
+    background: url("img/statbar.png") right 0 no-repeat;
+}
+
+.m-pbar .rby {
+    height: 9px;
+    background: url("img/statbar.png") right -30px no-repeat;
+}
+
+.m-pbar .cur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 9px;
+    background: url("img/statbar.png") left -66px no-repeat;
+}
+
+.m-pbar .btn {
+    position: absolute;
+    top: -7px;
+    right: -13px;
+    width: 22px;
+    height: 24px;
+    margin-left: -11px;
+    background: url("img/iconall.png") 0 -250px;
+}
+
+.m-pbar .btn {
+    background: url("img/iconall.png") 0 -280px;
+
+}
+
+.m-pbar .btn i {
+    visibility: hidden;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    font-style: normal;
+    text-align: left;
+    font-size: inherit;
+    background: url("img/loading.gif");
+}
+
+.m-pbar .time {
+    position: absolute;
+    top: -3px;
+    right: -84px;
+    color: #797979;
+    text-shadow: 0 1px 0 #121212;
+}
+
+.m-pbar .time em {
+    color: #a1a1a1;
+    font-style: normal;
+    text-align: left;
+    font-size: inherit
+}
+
+.oper {
+    width: 60px;
+    float: left;
+}
+
+.oper a:nth-child(1) {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 11px 2px 0 0;
+    text-indent: -9999px;
+    background: url("img/playbar.png") -88px -163px no-repeat;
+}
+
+.oper a:nth-child(1):hover {
+    background: url("img/playbar.png") -88px -189px no-repeat;
+
+}
+
+.oper a:nth-child(2) {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 11px 2px 0 0;
+    text-indent: -9999px;
+    background: url("img/playbar.png") -114px -163px no-repeat;
+}
+
+.oper a:nth-child(2):hover {
+    background: url("img/playbar.png") -114px -189px no-repeat;
+}
+
+.ctrl {
+    position: relative;
+    z-index: 10;
+    width: 118px;
+    padding-left: 13px;
+    float: left;
+    background: url("img/playbar.png") -147px -238px no-repeat;
+}
+
+.ctrl .m-vol {
+    position: absolute;
+    top: -113px;
+    left: 9px;
+    clear: both;
+    width: 32px;
+    height: 113px;
+    /*visibility: hidden*/
+}
+
+.ctrl .m-vol .barbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 113px;
+    background: url("img/playbar.png") 0 -503px no-repeat;
+    display: none;
+}
+
+.ctrl .icn-vol {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 11px 2px 0 0;
+    background: url("img/playbar.png") -2px -248px;
+}
+
+.ctrl .icn-vol:hover {
+    background: url("img/playbar.png") -31px -248px no-repeat;
+}
+
+.ctrl .icn-loop {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 11px 2px 0 0;
+    background: url("img/playbar.png") -3px -344px no-repeat;
+}
+
+.ctrl .icn-loop:hover {
+    background: url("img/playbar.png") -33px -344px no-repeat;
+}
+
+.add {
+    /*display: inline-block;*/
+    float: left;
+    width: 59px;
+    height: 36px;
+    position: relative;
+    zoom: 1;
+}
+
+.add .tip {
+    position: absolute;
+    top: -51px;
+    left: -65px;
+    clear: both;
+    width: 152px;
+    height: 49px;
+    background: url("img/playbar.png") 0 -287px no-repeat;
+    text-align: center;
+    color: #fff;
+    line-height: 37px;
+    display: none;
+}
+
+.add a {
+    display: block;
+    float: none;
+    width: 38px;
+    height: 25px;
+    margin: 11px 2px 0 0;
+    padding-left: 21px;
+    background: url("img/playbar.png") -42px -68px;
+    line-height: 27px;
+    text-align: center;
+    color: #666;
+    text-shadow: 0 1px 0 #080707;
+    text-indent: 0;
+    text-decoration: none;
+}
+
+/*------------底部hover的盒子end----------*/
+
+
+

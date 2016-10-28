@@ -1,0 +1,3 @@
+[{"imgSrc":"img/b1.jpg","desc":"这是测试图片"},{"imgSrc":"img/b2.jpg","desc":"这是测试图片"},{"imgSrc":"img/b3.jpg","desc":"这是测试图片"},{"imgSrc":"img/b4.jpg","desc":"这是测试图片"},{"imgSrc":"img/b5.jpg","desc":"这是测试图片"},{"imgSrc":"img/b6.jpg","desc":"这是测试图片"},{"imgSrc":"img/b7.jpg","desc":"这是测试图片"},{"imgSrc":"img/b8.jpg","desc":"这是测试图片"}
+
+]
